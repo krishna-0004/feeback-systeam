@@ -1,0 +1,157 @@
+* {
+   
+    /* box-sizing: border-box; */
+    font-family: system-ui, -apple-system, sans-serif;
+    /* overflow: hidden; */
+  }
+  
+  body {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+  }
+  
+  .bg-image {
+    background: url('../../assets/SGU.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .nav-landing {
+    margin-top: 10px;
+    background-color: rgba(245, 242, 242, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo img {
+    height: 48px;
+    width: 48px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dc2626;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #dc2626;
+  }
+  
+  .login-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .login-btn:hover {
+    background: #b91c1c;
+  }
+  
+  main {
+    flex: 1;
+    position: relative;
+  }
+  
+  .content {
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* h1 {
+    color: #dc2626;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  } */
+  
+  .developed-by {
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .developed-by p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo-container {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .logo-container img {
+    height: 32px;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 640px) {
+  
+    body {
+      background-size: auto;
+      background-position: center;
+    }
+  
+    h1 {
+        font-size: 3rem;
+    }
+  
+    .developed-by p {
+        font-size: 1.25rem;
+    }
+  
+    .logo-container img {
+        height: 28px;
+    }
+  
+    .developed-by {
+      margin-bottom: 10rem;
+    }
+  }
