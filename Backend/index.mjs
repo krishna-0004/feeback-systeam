@@ -1,6 +1,5 @@
-import app from "./app.mjs";
+import app from "../app.mjs";
 
-const PORT = process.env.PORT || 5000;
-
-// Start server
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+export default function handler(req, res) {
+  return app(req, res);
+}
