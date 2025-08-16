@@ -14,3 +14,10 @@
 <img width="1919" height="927" alt="image" src="https://github.com/user-attachments/assets/d20736d0-af18-4983-afac-f8ac58b74b03" />
 
 ['Student Dashboard']
+<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/8e770669-87bb-442c-acce-bbde2572eb5c" />
+
+['Feedback Question Page']
+<img width="1919" height="922" alt="image" src="https://github.com/user-attachments/assets/2cc37fd2-88a4-44b8-bbb5-c28cb2a2123e" />
+
+['HOD Dashboard']
+<img width="1919" height="930" alt="Screenshot 2025-08-16 220829" src="https://github.com/user-attachments/assets/5cc0e500-cbc3-489d-a505-eb18269d798d" />
