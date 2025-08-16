@@ -20,7 +20,7 @@ export default function HODDashboard() {
           return;
         }
 
-        const res = await axios.get("http://localhost:5000/hod/teachers", {
+        const res = await axios.get("https://feeback-systeam.onrender.com/hod/teachers", {
           headers: { Authorization: `Bearer ${token}` },
           withCredentials: true,
         });
@@ -53,7 +53,7 @@ export default function HODDashboard() {
       }
 
       const res = await axios.get(
-        `http://localhost:5000/hod/feedback/${selectedTeacher._id}`,
+        `https://feeback-systeam.onrender.com/hod/feedback/${selectedTeacher._id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
           withCredentials: true,
@@ -80,7 +80,7 @@ export default function HODDashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `http://localhost:5000/report/docx?teacher=${selectedTeacher._id}`, 
+        `https://feeback-systeam.onrender.com/report/docx?teacher=${selectedTeacher._id}`, 
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: "blob",

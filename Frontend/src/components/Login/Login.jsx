@@ -14,7 +14,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const responce = await axios.post("http://localhost:5000/auth/login", {
+      const responce = await axios.post("https://feeback-systeam.onrender.com/auth/login", {
         prn,
         pass: password
       });

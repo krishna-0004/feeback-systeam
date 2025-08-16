@@ -39,7 +39,7 @@ const StudentDashboard = () => {
     const fetchTeachers = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/feedback/teachers", {
+        const response = await axios.get("https://feeback-systeam.onrender.com/feedback/teachers", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -81,7 +81,7 @@ const StudentDashboard = () => {
       setLoading(true);
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get(`http://localhost:5000/feedback/question/${index}`, {
+        const response = await axios.get(`https://feeback-systeam.onrender.com/feedback/question/${index}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -150,7 +150,7 @@ const StudentDashboard = () => {
 
     try {
       const token = localStorage.getItem("token");
-      await axios.post("http://localhost:5000/feedback/submit", payload, {
+      await axios.post("https://feeback-systeam.onrender.com/feedback/submit", payload, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

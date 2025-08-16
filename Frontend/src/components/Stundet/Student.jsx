@@ -15,7 +15,7 @@ export default function Student() {
   useEffect(() => {
     const fetchStudentData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/feedback/teachers', {
+        const response = await axios.get('https://feeback-systeam.onrender.com/feedback/teachers', {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")} ` },
         });
 
